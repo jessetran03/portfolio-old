@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&family=Montserrat:wght@300;700&family=Nanum+Pen+Script&display=swap');
+
+
+* {
+  margin: 0;
+}
+
+header {
+  background-color: rgba(6, 16, 44, 0.836);
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+header h1 {
+  font-family: 'Montserrat Alternates';
+  font-size: 52px;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+}
+
+header h2 {
+  font-family: 'Montserrat Alternates';
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+header nav ul li a {
+  color: white;
+  font-family: 'Montserrat Alternates';
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+header nav ul li:last-child a {
+  margin-right: 0;
+}
+
+header nav ul li a:hover {
+  color: #BDBDBD;
+}
+
+main h3 {
+  font-family: 'Montserrat Alternates';
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+main h4 {
+  font-family: 'Montserrat Alternates';
+}
+
+section {
+  margin: 30px 60px 30px 60px;
+}
+
+p {
+  margin-top: 10px;
+}
+
+p, section ul li {
+  font-family: 'Montserrat';
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+main ul li a {
+  color: rgba(27, 27, 104, 0.808);
+}
+main ul li a:hover {
+  color: #50514F;
+}
+
+img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.round {
+  border-radius: 10px;
+}
+
+@media all and (min-width: 800px) {
+  p {
+    font-size: 16px;
+  }
+
+  header nav {
+    text-align: center;
+  }
+
+  section {
+  margin: 40px 100px 40px 100px;
+  }
+}
