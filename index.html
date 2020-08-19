@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -24,9 +24,11 @@
     </header>
 
     <main>
-      <section id="main">
-        <img src="images/profile.jpeg" alt="Jesse Tran - Profile Picture" class="center round">
-        <div>
+      <section id="main" class="group reverse">
+        <div class="item">
+          <img src="images/profile.jpeg" alt="Jesse Tran - Profile Picture" class="center round">
+        </div>
+        <div class="item">
           <h3>Meet Jesse</h3>
           <p>Hello! My name is Jesse Tran. I am a software developer currently residing in Houston, TX. I enjoy solving puzzles and creating new things which has led to my passion for coding.</p>
         </div>
@@ -46,15 +48,25 @@
           <li>SQL</li>
         </ul>
         <p>I am excited to work with other programmers and see the potential projects that can be created. I hope to be able to think logically and solve problems in an efficent manner for potential clients. I am always looking to learn new things which has led me to my interest in the tech industry.</p>
-        <p>Outside of coding, I enjoy being active, including hiking and playing volleyball. I aslo enjoy playing video games in my free time.</p>
+        <p>Outside of coding, I enjoy being active, including hiking and playing volleyball. I also enjoy playing video games in my free time.</p>
       </section>
 
       <hr>
 
       <section id="portfolio">
-        <h3>Projects</h3>
-        <h4>Insert title project here</h4>
-        <p>Insert project details here</p>
+        <h3>Portfolio</h3>
+        <div class="group">
+          <div class="item">
+            <h4>Insert project title here</h4>
+            <p>Insert project details here</p>
+            <p>Insert link to project here</p>
+          </div>
+          <div class="item">
+            <h4>Insert project title here</h4>
+            <p>Insert project details here</p>
+            <p>Insert link to project here</p>
+          </div>
+        </div>
       </section>
 
       <hr>
@@ -67,6 +79,22 @@
           <li><a href="http://linkedin.com/in/jessetran03" target="_blank">LinkedIn</a></li>
           <li><a href="http://github.com/jessetran03" target="_blank">GitHub</a></li>
         </ul>
+            
+        <form action="https://formspree.io/xwkrzaro" method="POST">
+
+          <label for="name">Name:</label>
+          <input id="name" type="text" name="name">
+
+          <label for="email">Email:</label>
+          <input id="email" type="email" name="_replyto">
+      
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" class="wide"></textarea>
+      
+          <button type="submit">Send</button>
+      
+        </form>
+
       </section>
 
     </main>
