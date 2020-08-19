@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&family=Montserrat:wght@300;700&family=Nanum+Pen+Script&display=swap');
 
+/* General Styling */
 
 * {
   margin: 0;
@@ -16,13 +17,13 @@ header h1 {
   font-size: 52px;
   color: white;
   text-align: center;
-  margin: 0;
+  margin-bottom: 10px;
   padding-top: 20px;
 }
 
 header h2 {
   font-family: 'Montserrat Alternates';
-  font-size: 30px;
+  font-size: 25px;
   color: white;
   text-align: center;
   margin-bottom: 20px;
@@ -62,6 +63,7 @@ main h3 {
 
 main h4 {
   font-family: 'Montserrat Alternates';
+  margin-bottom: 15px
 }
 
 section {
@@ -72,7 +74,7 @@ p {
   margin-top: 10px;
 }
 
-p, section ul li {
+p, section ul li, label, button {
   font-family: 'Montserrat';
   line-height: 1.5;
   font-size: 14px;
@@ -100,6 +102,18 @@ img {
   border-radius: 10px;
 }
 
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 0 15px 15px 0;
+}
+
+/* Flex for Desktop */
+
 @media all and (min-width: 800px) {
   p {
     font-size: 16px;
@@ -110,6 +124,42 @@ img {
   }
 
   section {
-  margin: 40px 100px 40px 100px;
+  margin: 40px 100px;
   }
+
+  .group {
+    flex-direction: row;
+  }
+  
+  .reverse {
+    flex-direction: row-reverse;
+  }
+
+  .flex {
+    margin-right: 30px;
+  }
+}
+
+/* Contact Form Design */
+
+form {
+  margin-top: 20px;
+}
+
+form label {
+  display: block;
+}
+
+form input {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 150px;
 }
