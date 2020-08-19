@@ -1,10 +1,15 @@
+/* Import font style for Montserrat */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&family=Montserrat:wght@300;700&family=Nanum+Pen+Script&display=swap');
 
 /* General Styling */
 
 * {
   margin: 0;
+  padding: 0;
 }
+
+/* Header */
 
 header {
   background-color: rgba(6, 16, 44, 0.836);
@@ -36,7 +41,6 @@ header nav {
 
 header nav ul {
   display: flex;
-  padding-left: 0;
   list-style: none;
 }
 
@@ -54,6 +58,8 @@ header nav ul li:last-child a {
 header nav ul li a:hover {
   color: #BDBDBD;
 }
+
+/* Body */
 
 main h3 {
   font-family: 'Montserrat Alternates';
@@ -78,6 +84,10 @@ p, section ul li, label, button {
   font-family: 'Montserrat';
   line-height: 1.5;
   font-size: 14px;
+}
+
+main ul {
+  padding: 5px 0 0 32px;
 }
 
 main ul li a {
@@ -140,7 +150,7 @@ img {
   }
 }
 
-/* Contact Form Design */
+/* Contact Form */
 
 form {
   margin-top: 20px;
@@ -158,8 +168,5 @@ form input {
 form textarea {
   width: 100%;
   margin-bottom: 20px;
-}
-
-form textarea {
   height: 150px;
 }
