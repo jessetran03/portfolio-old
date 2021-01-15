@@ -1,118 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Jesse Tran : Software Developer</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
 
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Jesse Tran : Software Developer</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+    type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
 
-    <header>
-      <h1>Jesse Tran</h1>
-      <h2>Software Developer</h2>
-      <nav>
-        <ul id="menu">
-          <li><a href="#main">Main</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+<body>
 
-    <main>
-      <section id="main" class="group reverse">
-        <div class="item">
-          <img src="images/profile.jpeg" alt="Jesse Tran - Profile Picture" class="center round">
+  <header>
+    <h1>Jesse Tran</h1>
+    <h2>Software Developer</h2>
+    <nav>
+      <ul id="menu">
+        <li><a href="#main">Main</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="main" class="group">
+      <div class="main-image">
+        <img src="images/profile.jpeg" alt="Jesse Tran - Profile Picture" class="center round">
+      </div>
+      <div class="main-info">
+        <h3>Meet Jesse</h3>
+        <p>Hello! My name is Jesse Tran. I am a software developer currently residing in Houston, TX. I enjoy solving
+          puzzles and creating new things which have led to my passion for coding.</p>
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="about" id="about">
+      <h3>About Jesse</h3>
+      <p>
+        I am a full-stack software engineer and a graduate of Thinkful's Engineering Flex program.
+        I attended the University of Arkansas (Go Hogs!) where I got a Bachelor's degree in Mechanical Engineering and
+        a Master's degree in Accounting.
+        I have professional experience working in continuous improvement as well as working with implementing software
+        for clients.
+      </p>
+      <p>Programming languages and tools that I have worked with:</p>
+      <ul>
+        <li>React.js</li>
+        <li>Node.js</li>
+        <li>Express.js</li>
+        <li>JavaScript</li>
+        <li>HTML/CSS</li>
+        <li>SQL/PostgreSQL</li>
+      </ul>
+      <p>
+        I am excited to work with other programmers and see the potential projects that can be created.
+        I hope to be able to think logically and solve problems in an efficient manner for potential clients.
+        I am always looking to learn new things which have led me to my interest in the tech industry.
+      </p>
+      <p>
+        Outside of coding, I enjoy being active, including hiking and playing volleyball. I also enjoy playing video
+        games in my free time.
+      </p>
+    </section>
+
+    <hr>
+
+    <section class="projects" id="projects">
+      <h3>Projects</h3>
+      <div class="project">
+        <div class="project-image">
+          <a href="https://boba-tier-app.vercel.app/">
+            <img src="images/boba-tier-screenshot.png" alt="Boba Tier Screenshot">
+          </a>
         </div>
-        <div class="item">
-          <h3>Meet Jesse</h3>
-          <p>Hello! My name is Jesse Tran. I am a software developer currently residing in Houston, TX. I enjoy solving puzzles and creating new things which have led to my passion for coding.</p>
+        <div class="project-info">
+          <h4>Boba Tier</h4>
+          <p>
+            Boba Tier is a full-stack app that lets users rate drinks from their favorite boba tea shops and displays
+            the top-rated drinks by city. Users can track the drinks they have rated, 
+            and they can also leave comments on the boba tea shop pages.
+          </p>
+          <p>Technology Tools:</p>
+          <ul>
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>PostgreSQL</li>
+            <li>HTML/CSS</li>
+          </ul>
+          <p>
+            <a href="github.com/jessetran03/boba-tier-app">Github</a> |
+            <a href="https://boba-tier-app.vercel.app/">Live</a>
+          </p>
         </div>
-      </section>
-
-      <hr>
-
-      <section id="about">
-        <h3>About Jesse</h3>
-        <p>I attended the University of Arkansas (Go Hogs!) where I got a Bachelor's degree in Mechanical Engineering and a Master's degree in Accounting. I am currently a student for the Engineering Flex program at Thinkful. I have professional experience working in continuous improvement as well as working with implementing ERP systems for clients.</p>
-        <p>Programming languages that I have worked with:</p>
-        <ul>
-          <li>C/C++</li>
-          <li>Python</li>
-          <li>JavaScript</li>
-          <li>HTML/CSS</li>
-          <li>SQL</li>
-        </ul>
-        <p>I am excited to work with other programmers and see the potential projects that can be created. I hope to be able to think logically and solve problems in an efficient manner for potential clients. I am always looking to learn new things which have led me to my interest in the tech industry.</p>
-        <p>Outside of coding, I enjoy being active, including hiking and playing volleyball. I also enjoy playing video games in my free time.</p>
-      </section>
-
-      <hr>
-
-      <section id="portfolio">
-        <h3>Portfolio</h3>
-        <div class="group">
-          <div class="item">
-            <h4>Insert project title here</h4>
-            <p>Insert project description here</p>
-            <p>Insert list of skills used here</p>
-            <ul>
-              <li>JavaScript</li>
-              <li>HTML/CSS</li>
-              <li>JQuery</li>
-            </ul>
-            <p><a href="">Insert link to GitHub repo here.</a></p>
-            <p><a href="">Insert link to live working app here</a></p>
-          </div>
-          <div class="item">
-            <h4>Insert project title here</h4>
-            <p>Insert project description here</p>
-            <p>Insert list of skills used here</p>
-            <ul>
-              <li>JavaScript</li>
-              <li>HTML/CSS</li>
-              <li>JQuery</li>
-            </ul>
-            <p><a href="">Insert link to GitHub repo here.</a></p>
-            <p><a href="">Insert link to live working app here</a></p>
-          </div>
+      </div>
+      <hr class="hidden">
+      <div class="project">
+        <div class="project-image">
+          <a href="https://aimfit-app.vercel.app/">
+            <img src="images/aimfit-screenshot.png" alt="AimFit Screenshot">
+          </a>
         </div>
-      </section>
+        <div class="project-info">
+          <h4>AimFit</h4>
+          <p>
+            AimFit is a full-stack app that helps users organize and log their workouts.
+            Users can customize their workouts with different exercises along with creating a schedule of their workouts.
+          </p>
+          <p>Technology Tools:</p>
+          <ul>
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>PostgreSQL</li>
+            <li>HTML/CSS</li>
+          </ul>
+          <p>
+            <a href="github.com/jessetran03/aimfit">Github</a> |
+            <a href="https://aimfit-app.vercel.app/">Live</a>
+          </p>
+        </div>
+      </div>
+      <hr class="hidden">
+      <div class="project">
+        <div class="project-image">
+          <a href="https://github.com/jessetran03/date-night">
+            <img src="images/date-night-screenshot.png" alt="Date Night Screenshot">
+          </a>
+        </div>
+        <div class="project-info">
+          <h4>Date Night</h4>
+          <p>
+            Date Night is a web app that helps users plan their perfect date.
+            Users can use this app to find restaurants to eat dinner as well as places to eat dessert after.
+          </p>
+          <p>Technology Tools:</p>
+          <ul>
+            <li>JavaScript</li>
+            <li>jQuery</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+          <p>
+            <a href="https://github.com/jessetran03/date-night">Github</a> |
+            <a href="https://jessetran03.github.io/date-night/">Live</a>
+          </p>
+        </div>
+      </div>
+    </section>
 
-      <hr>
+    <hr>
 
-      <section id="contact">
-        <h3>Contact Jesse</h3>
-        <p>Jesse can be contacted through:</p>
-        <ul>
-          <li><a href="mailto:jessetran03@gmail.com">Email</a></li>
-          <li><a href="http://linkedin.com/in/jessetran03" target="_blank">LinkedIn</a></li>
-          <li><a href="http://github.com/jessetran03" target="_blank">GitHub</a></li>
-        </ul>
-            
-        <form action="https://formspree.io/xwkrzaro" method="POST">
+    <section id="contact">
+      <h3>Contact Jesse</h3>
+      <p>Jesse can be contacted through:</p>
+      <ul>
+        <li><a href="mailto:jessetran03@gmail.com">Email</a></li>
+        <li><a href="http://linkedin.com/in/jessetran03" target="_blank">LinkedIn</a></li>
+        <li><a href="http://github.com/jessetran03" target="_blank">GitHub</a></li>
+      </ul>
 
-          <label for="name">Name:</label>
-          <input id="name" type="text" name="name">
+      <form action="https://formspree.io/xwkrzaro" method="POST">
 
-          <label for="email">Email:</label>
-          <input id="email" type="email" name="_replyto">
-      
-          <label for="message">Your Message:</label>
-          <textarea id="message" name="message" class="wide"></textarea>
-      
-          <button type="submit">Send</button>
-      
-        </form>
+        <label for="name">Name:</label>
+        <input id="name" type="text" name="name">
 
-      </section>
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="_replyto">
 
-    </main>
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" class="wide"></textarea>
 
-    <script src="script.js"></script>
-  </body>
+        <button type="submit">Send</button>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
 </html>

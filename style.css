@@ -17,6 +17,14 @@ header {
   padding-bottom: 20px;
 }
 
+a {
+  transition: color 0.2s;
+}
+
+p {
+  text-align: justify;
+}
+
 header h1 {
   font-family: 'Montserrat Alternates';
   font-size: 52px;
@@ -48,7 +56,7 @@ header nav ul li a {
   color: white;
   font-family: 'Montserrat Alternates';
   text-decoration: none;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
 header nav ul li:last-child a {
@@ -90,16 +98,27 @@ main ul {
   padding: 5px 0 0 32px;
 }
 
-main ul li a {
-  color: rgba(27, 27, 104, 0.808);
-}
-main ul li a:hover {
-  color: #50514F;
+main a {
+  font-weight: 600;
+  text-decoration: none;
+  color: rgb(79, 144, 182)
 }
 
-img {
-  width: 200px;
+main a:visited {
+  color: rgb(79, 144, 182)
+}
+
+main a:hover {
+  color: rgb(111, 173, 223);
+  text-decoration: underline;
+}
+
+.group img {
+  min-width: 250px;
+  width: 100%;
+  max-width: 300px;
   margin-bottom: 20px;
+  margin: 0 20px 20px 20px;
 }
 
 .center {
@@ -114,17 +133,90 @@ img {
 
 .group {
   display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+
+.main-image {
+  flex: 1;
+  margin: 0 0 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.main-info {
+  min-width: 200px;
+  flex: 1;
+  margin: 0 0 15px 0;
+}
+
+.projects {
+  display: flex;
   flex-direction: column;
 }
 
-.item {
+.project {
   flex: 1;
-  margin: 0 15px 15px 0;
+  margin: 0 0 15px 0;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+}
+
+.project-image {
+  flex: 4;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.project-image img {
+  width: 100%;
+}
+
+.project-info {
+  padding-left: 20px;
+  flex: 5;
+}
+
+.hidden {
+  margin-bottom: 15px;
 }
 
 /* Flex for Desktop */
 
+@media all and (min-width: 500px) {
+  main {
+    margin: 20px 50px;
+  }
+}
+
 @media all and (min-width: 800px) {
+  .project {
+    margin: 0 15px 15px 0;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.233);
+    padding: 25px;
+  }
+  .hidden {
+    display: none;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  .project {
+    flex-direction: row;
+  }
+  .project-image {
+    margin-bottom: 0;
+  }
+}
+
+@media all and (min-width: 1200px) {
+
+  main {
+    margin: 20px 100px;
+  }
+
   p {
     font-size: 16px;
   }
@@ -134,19 +226,7 @@ img {
   }
 
   section {
-  margin: 40px 100px;
-  }
-
-  .group {
-    flex-direction: row;
-  }
-  
-  .reverse {
-    flex-direction: row-reverse;
-  }
-
-  .flex {
-    margin-right: 30px;
+    margin: 40px 100px;
   }
 }
 
@@ -169,4 +249,12 @@ form textarea {
   width: 100%;
   margin-bottom: 20px;
   height: 150px;
+}
+
+@media all and (min-width: 1600px) {
+
+  main {
+    margin: 20px 250px;
+  }
+
 }
